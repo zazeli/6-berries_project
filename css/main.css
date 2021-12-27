@@ -1,0 +1,10 @@
+@import './base/reset.css';
+@import './components/';
+@import './components/button.css';
+
+.container {
+    display: inline-block;
+    width: 800px;
+    margin: 0 calc(50% -400px);
+    background-color: red;
+}
