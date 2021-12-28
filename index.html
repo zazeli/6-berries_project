@@ -24,14 +24,19 @@
             <a href="">Smoothies</a>
             <a href="">Contact us</a>
         </nav>
-        <nav class="icons">
+        <nav class="menu">
             <a href="#" class="fa fa-search"></a>
             <a href="#" class="fa fa-shopping-bag"></a>
         </nav>
+        <i class="fa fa-bars hamburger"></i>
     </header>
     <main class="container">
         <div class="gallery">
-            <img src="./img/mainimage.png" alt="mainimage">
+            <picture>
+                <source media="(max-width: 799px)" srcset="./img/mainimage-mobile.png">
+                <source media="(min-width: 800px)" srcset="./img/mainimage.png">
+                <img src="./img/mainimage.png" alt="mainimage">
+            </picture>
             <i class="fa fa-angle-left"></i>
             <i class="fa fa-angle-right"></i>
         </div>
