@@ -1,6 +1,10 @@
 @import "./base/reset.css";
-@import "./components/";
+@import "./components/font-awesome.min.css";
 @import "./components/button.css";
+
+:root {
+  --primary-color: #ff5e61;
+}
 
 body {
   display: flex;
@@ -9,11 +13,98 @@ body {
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
+  padding: 20px;
 }
 
 .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
   width: 100%;
-  background-color: red;
+}
+
+.logo {
+  height: 25px;
+  margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu > a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.icons > a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.gallery {
+  width: 60%;
+  padding: 0 1em;
+  position: relative;
+}
+
+.gallery > img {
+  width: 100%;
+}
+
+.gallery > .fa {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.gallery > .fa.fa-angle-left {
+  left: 0;
+  padding-right: 0.17em;
+  /* transform: translateX(100%); */
+}
+
+.gallery > .fa.fa-angle-right {
+  right: 0;
+  padding-left: 0.17em;
+  /* transform: translateX(-50%); */
+}
+
+.text {
+  width: 40%;
+}
+
+.text > .leftcolumn {
+  margin-left: 0;
+}
+
+.text > .rightcolumn {
+  margin-right: 0;
 }
 
 @media (min-width: 480px) {
