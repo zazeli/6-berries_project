@@ -100,13 +100,6 @@ main.container {
   width: 40%;
 }
 
-.text > .column > .leftcolumn {
-  margin-left: 0;
-}
-
-.text > .column > .rightcolumn {
-  margin-right: 0;
-}
 
 @media (min-width: 480px) {
   .container {
