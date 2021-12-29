@@ -4,16 +4,17 @@
 
 :root {
   --primary-color: #ff5e61;
+  --secondary-color: #fcc7d6;
 }
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 30px 0;
 }
 
 .container {
@@ -58,6 +59,7 @@ main.container {
 
 .gallery {
   padding: 0 0.7em;
+  font-size: 32px;
   position: relative;
 }
 
@@ -119,7 +121,7 @@ main.container {
 .text > .contains {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px 50px;
 }
 
 .text > .contains > .list {
@@ -153,19 +155,48 @@ main.container {
 }
 
 .text .list > .list-image {
+  display: flex;
+  gap: 15px;
   list-style-type: none;
 }
 
 .text .list-image > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
 }
 
 .text .list-image img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
 }
 
 .text > form {
+
 }
 
 .text > form > button {
+    background-color: var(--primary-color);
+    color: #fff;
+    line-height: 1em;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 1.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text > form > button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 1em;
+    cursor: pointer;
 }
 
 @media (min-width: 480px) {
@@ -198,6 +229,9 @@ main.container {
 @media (min-width: 1000px) {
   .container {
     width: 900px;
+  }
+  .text > .contains {
+      flex-direction: row;
   }
 }
 
