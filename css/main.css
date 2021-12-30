@@ -14,7 +14,7 @@ body {
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
-  padding: 70px 0 30px 0;
+  padding: 72px 0 30px 0;
 }
 
 .container {
@@ -50,14 +50,16 @@ main.container {
     display: none;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
     position: absolute;
     padding: 20px;
     bottom: 0;
     right: 0;
     z-index: 1;
-    transform: translateY(100%);
+    transform: translateY(95%);
+    text-align: center;
     background-color: #fff;
-    box-shadow: 0 2px 4px #0003;
+    box-shadow: 0 2px 4px -6px #0003;
     left: 0;
 }
 
@@ -237,6 +239,16 @@ main.container {
 @media (min-width: 780px) {
   .container {
     width: 660px;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    transform: translateY(0);
+    box-shadow: none;
+  }
+    .main-menu > .menu {
+    flex-direction: row;
   }
   .hamburger {
     display: none;
