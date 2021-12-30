@@ -87,6 +87,11 @@ main.container {
   font-size: 2em;
 }
 
+.hamburger:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .gallery {
   padding: 0 0.7em;
   font-size: 32px;
