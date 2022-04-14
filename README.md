@@ -8,7 +8,7 @@ _Website project_
 
  **Educative** porpuses only. 
 
-Site published at: https://zazeli.github.io/6-berries/
+Site published at: https://zazeli.github.io/berries_project
 
 Design: [Coming soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
 
